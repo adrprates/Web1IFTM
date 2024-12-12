@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Inline</title>
+    <script>
+        window.onload = function(){
+            document.getElementById("btn").onclick = mudaCor;
+        }
+
+        function mudaCor(){
+            document.getElementById('cor').style.color='red';
+        }
+    </script>
+    <!-- <style>
+        #cor{
+            color: green;
+        }
+    </style> -->
+</head>
+<body>
+    <h1 id="cor">Cabeçalho muda cor</h1>
+    <button id="btn">Vermelha</button>
+</body>
+</html>

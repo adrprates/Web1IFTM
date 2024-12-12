@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Inline</title>
+    <style>
+        #cor{
+            color: green;
+        }
+        #msg{
+            background-color: bisque;
+            border: 2px solid black;
+        }
+    </style>
+    <script type="text/javascript" src="./jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnFirst").click(function(){
+                //$("li:first").css("background-color", "blue"); //primeiro
+                //$("li:odd").css("background-color", "blue"); //impares
+                //$("li:even").css("background-color", "blue"); //pares
+                //$("li:eq(3)").css("background-color", "blue"); //ultimo
+            });
+
+
+
+            $("#btn").click(function(){
+                $("#cor").css("color", "red");
+                $('#msg').css("height", "200px");
+                let cor = $("#msg").css("background-color");
+                if(cor == "rgb(255, 228, 196)"){
+                    $("#msg").css("background-color", "pink");
+                } else{
+                    $("#msg").css("background-color", "bisque");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="msg">
+        <h1 id="cor">Cabeçalho muda cor</h1>
+    </div>
+    <button id="btn">Vermelha</button> 
+
+    <ul>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+        <li>Quarto item</li>
+        <li>Quinto item</li>
+    </ul>
+    <button id="btnFirst">First</button>
+
+
+    
+</body>
+</html>
